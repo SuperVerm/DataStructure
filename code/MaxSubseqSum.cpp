@@ -42,13 +42,13 @@ int MaxSubseqSum02(int n, int a[])
 
 int main()
 {
-    int a[] = {5, 2, -3, 6};
+    int a[] = {5, 2, -3, 6, -7, 8};   
     //计算数组的长度n。
     int n = sizeof(a) / sizeof(a[0]);
-
+    //两种方式的结果。
     int result01 = MaxSubseqSum01(n, a);
-
     int result02 = MaxSubseqSum02(n, a);
+    cout << "最大的子列和为" << result01 << endl;
     cout << "最大的子列和为" << result02 << endl;
     system("pause");
     return 0;
